@@ -1,9 +1,9 @@
 import {gql, GraphQLClient} from 'graphql-request'
-// import dotenv from 'dotenv';
-// dotenv.config();
+import dotenv from 'dotenv';
+dotenv.config();
 
 
-export const graphcms = new GraphQLClient("https://api-ap-south-1.hygraph.com/v2/clkqhb8601x5l01t62y4ifyry/master")
+export const graphcms = new GraphQLClient(process.env.GRAPH_CMS);
 
 
 const category = `
